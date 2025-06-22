@@ -28,8 +28,8 @@ url: "https://mingerm.github.io"
 github:
   username: mingerm # change to your GitHub username
 
-twitter:
-  username: twitter_username # change to your Twitter username
+#twitter:
+#  username: twitter_username # change to your Twitter username
 
 social:
   # Change to your full name.
