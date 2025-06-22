@@ -100,7 +100,7 @@ cdn:
 
 # the avatar on sidebar, support local or CORS resources
 avatar:
-  https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/462102617_1204773204062067_8244925271577960748_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QHLyn2su4tvGHy8EmBmGRNRp6uVvNqVXH8Jx-0El-Wl7rylFHC6DzpDQiM8XB83G_A&_nc_ohc=1hwTmRdphtoQ7kNvwEDpqOm&_nc_gid=_dtewe6Pk7ufHf5_hn962w&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfPCJbx-zH_ARQCIqAPfnkvdnHVpbgLtzBm8GXxFCJ9DIQ&oe=685D5228&_nc_sid=7a9f4b
+  /assets/IMG_1259.JPG
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
 social_preview_image: # string, local or CORS resources
