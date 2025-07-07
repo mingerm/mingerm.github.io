@@ -1,5 +1,6 @@
 ---
-layout: blogs
-icon: fas fa-tags
-order: 
+layout: home
+icon: fas fa-blog
+order: 4
+permalink: /blogs/
 ---
