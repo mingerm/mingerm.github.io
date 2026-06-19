@@ -153,6 +153,81 @@
         margin-top: 8px;
       }
     }
+    .about-container {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+    }
+    
+    .profile-image {
+      width: 180px;
+      height: 180px;
+      flex-shrink: 0;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 16px;
+      border: 1px solid #e5e7eb;
+    }
+    
+    .about-content {
+      flex: 1;
+    }
+    
+    .about-content h2 {
+      margin-top: 0;
+    }
+    
+    .about-content p {
+      margin-bottom: 14px;
+      color: #444;
+    }
+    
+    .interest-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      list-style: none;
+    }
+    
+    .interest-list li {
+      padding: 8px 14px;
+      background-color: #f3f4f6;
+      border: 1px solid #e5e7eb;
+      border-radius: 999px;
+      color: #333;
+      font-size: 15px;
+    }
+    
+    @media (max-width: 650px) {
+      .about-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .profile-image {
+        width: 150px;
+        height: 150px;
+      }
+    }
+    .manuscript-item {
+      margin-top: 24px;
+    }
+    
+    .manuscript-authors,
+    .manuscript-title,
+    .manuscript-status {
+      margin: 6px 0;
+    }
+    
+    .manuscript-title {
+      font-weight: 600;
+    }
+    
+    .manuscript-status {
+      color: #666;
+      font-style: italic;
+    }
   </style>
 </head>
 
@@ -166,6 +241,7 @@
       <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="#experience">Experience</a>
+      <a href="#manuscripts">Manuscripts</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -175,7 +251,7 @@
     <section id="about">
       <div class="about-container">
         <img
-          src="assets/profile.jpg"
+          src="assets/me.jpeg"
           alt="Profile photo of Mingyun Kim"
           class="profile-image"
         >
@@ -187,13 +263,6 @@
             I am an undergraduate student in AI Convergence at Soongsil
             University and an undergraduate research intern at the Neural
             Reasoning Lab.
-          </p>
-    
-          <p>
-            I am interested in developing AI systems from research ideas
-            and evaluating them through systematic experiments. My current
-            work includes GUARD, a user-query-based short-form video
-            filtering system.
           </p>
         </div>
       </div>
@@ -246,6 +315,21 @@
             to reduce visual information loss during temporal frame merging.
           </li>
         </ul>
+      </article>
+    </section>
+
+    <section id="manuscripts">
+      <h2>Manuscripts in Preparation</h2>
+    
+      <article class="manuscript-item">
+        <p class="manuscript-title">
+          “GUARD: A User-Query-Based Short-Form Video Filtering System
+          Using Vision-Language Models.”
+        </p>
+    
+        <p class="manuscript-status">
+          Collaborative manuscript in preparation.
+        </p>
       </article>
     </section>
     
@@ -302,27 +386,6 @@
         </ul>
       </article>
     </section>
-    
-        
-    <section id="projects">
-      <h2>Projects</h2>
-
-      <div class="project">
-        <h3>GUARD</h3>
-        <p>
-          사용자 자연어 질의와 영상의 시각적 내용을 함께 분석하는
-          숏폼 영상 필터링 시스템입니다.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>Handwritten Digit Recognition</h3>
-        <p>
-          YOLO와 LeNet 기반 숫자 탐지 및 인식 성능 최적화 프로젝트입니다.
-        </p>
-      </div>
-    </section>
-
     <section id="contact">
       <h2>Contact</h2>
 
