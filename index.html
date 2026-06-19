@@ -93,6 +93,66 @@
       background-color: #ffffff;
       border-top: 1px solid #e5e7eb;
     }
+    .experience-item,
+    .project-item {
+      margin-top: 28px;
+    }
+    
+    .project-item + .project-item {
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid #e5e7eb;
+    }
+    
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
+      margin-bottom: 16px;
+    }
+    
+    .item-header h3 {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+    
+    .organization {
+      margin: 5px 0 0;
+      color: #555;
+      font-style: italic;
+    }
+    
+    .date {
+      flex-shrink: 0;
+      margin: 0;
+      color: #666;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    
+    .experience-item ul,
+    .project-item ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+    
+    .experience-item li,
+    .project-item li {
+      margin-bottom: 10px;
+      color: #444;
+    }
+    
+    @media (max-width: 650px) {
+      .item-header {
+        display: block;
+      }
+    
+      .date {
+        margin-top: 8px;
+      }
+    }
   </style>
 </head>
 
@@ -105,6 +165,7 @@
     <nav>
       <a href="#about">About</a>
       <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -132,6 +193,100 @@
       </ul>
     </section>
 
+    ```html
+    <section id="experience">
+      <h2>Research Experience</h2>
+    
+      <article class="experience-item">
+        <div class="item-header">
+          <div>
+            <h3>Undergraduate Research Intern</h3>
+            <p class="organization">
+              Neural Reasoning Lab, Soongsil University
+            </p>
+          </div>
+    
+          <p class="date">Jan. 2026 – Present</p>
+        </div>
+    
+        <ul>
+          <li>
+            Developing GUARD, a user-query-based short-form video filtering
+            system using a vision-language model.
+          </li>
+          <li>
+            Implemented a video analysis pipeline combining uniform frame
+            sampling, multimodal inference, and binary filtering decisions
+            based on natural-language queries.
+          </li>
+          <li>
+            Designed an evaluation protocol covering 10 visually and
+            contextually diverse content categories and analyzed filtering
+            accuracy and response latency.
+          </li>
+          <li>
+            Investigated frame duplication as an input construction strategy
+            to reduce visual information loss during temporal frame merging.
+          </li>
+        </ul>
+      </article>
+    </section>
+    
+    <section id="projects">
+      <h2>Selected Projects</h2>
+    
+      <article class="project-item">
+        <div class="item-header">
+          <div>
+            <h3>Handwritten Digit Detection and Recognition on Jetson Orin Nano</h3>
+            <p class="organization">Course Project</p>
+          </div>
+    
+          <p class="date">2026</p>
+        </div>
+    
+        <ul>
+          <li>
+            Trained a YOLO-based detector to localize handwritten digits in
+            video frames and converted detected regions into 28×28 PGM inputs.
+          </li>
+          <li>
+            Integrated the detector with a cuDNN-based LeNet recognition
+            pipeline on an NVIDIA Jetson Orin Nano.
+          </li>
+          <li>
+            Profiled inference latency and optimized the end-to-end detection
+            and recognition pipeline for edge deployment.
+          </li>
+        </ul>
+      </article>
+    
+      <article class="project-item">
+        <div class="item-header">
+          <div>
+            <h3>Autoencoder-Based Anomaly Detection on EMNIST</h3>
+            <p class="organization">Course Project</p>
+          </div>
+        </div>
+    
+        <ul>
+          <li>
+            Implemented an MLP autoencoder to distinguish handwritten digits
+            from anomalous character samples using reconstruction errors.
+          </li>
+          <li>
+            Compared multiple latent dimensions, network architectures, and
+            loss functions.
+          </li>
+          <li>
+            Evaluated anomaly detection performance using precision, recall,
+            and F1-score.
+          </li>
+        </ul>
+      </article>
+    </section>
+    
+        
     <section id="projects">
       <h2>Projects</h2>
 
